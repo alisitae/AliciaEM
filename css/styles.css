@@ -60,8 +60,8 @@
  *		## intro transitions
  * # ABOUT
  * # EXPERTISE
- * # CLIENTS
- *		## clients list
+ * # PORTFOLIO
+ *		## portfolio list
  * # CTA
  * # JOURNAL
  * # FOOTER
@@ -4037,32 +4037,32 @@ td:last-child {
 
 
 /* ===================================================================
- * # CLIENTS
+ * # PORTFOLIO
  *
  *
  * ------------------------------------------------------------------- */
-.s-clients {
+.s-portfolio {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-4);
 	background-color: var(--color-3);
 }
 
-.s-clients__content-block:first-child {
+.s-portfolio__content-block:first-child {
 	margin-bottom: var(--vspace-1_75);
 }
 
-.s-clients__content-block:first-child .grid-block {
+.s-portfolio__content-block:first-child .grid-block {
 	--grid-gap-v: 0;
 }
 
-.s-clients__content-block:first-child .grid-section-split__primary {
+.s-portfolio__content-block:first-child .grid-section-split__primary {
 	grid-row: auto;
 }
 
 /* --------------------------------------------------------------------
- * ## clients list
+ * ## portfolio list
  * -------------------------------------------------------------------- */
-.clients-list {
+.portfolio-list {
 	display     : flex;
 	flex-flow   : row wrap;
 	border-color: rgba(0, 0, 0, 0.2);
@@ -4071,7 +4071,7 @@ td:last-child {
 	margin-top  : 0;
 }
 
-.clients-list__item {
+.portfolio-list__item {
 	flex        : none;
 	width       : 20%;
 	border-color: rgba(0, 0, 0, 0.2);
@@ -4080,66 +4080,66 @@ td:last-child {
 	padding     : 0;
 }
 
-.clients-list__item a {
+.portfolio-list__item a {
 	display   : block;
 	padding   : var(--vspace-1) var(--vspace-0_75);
 	transition: all 0.5s ease-in;
 }
 
-.clients-list__item a:focus,
-.clients-list__item a:hover {
+.portfolio-list__item a:focus,
+.portfolio-list__item a:hover {
 	background-color: var(--color-3-dark);
 }
 
-.clients-list__item img {
+.portfolio-list__item img {
 	margin        : 0;
 	transform     : scale(0.95);
 	transition    : all 0.5s ease-in;
 	vertical-align: bottom;
 }
 
-.clients-list__item:nth-child(n) {
+.portfolio-list__item:nth-child(n) {
 	border-style: none solid solid none;
 }
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * clients
+ * portfolio
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
-	.clients-list__item {
+	.portfolio-list__item {
 		width: 25%;
 	}
 }
 
 @media screen and (max-width: 1200px) {
-	.s-clients__content-block:first-child .grid-section-split__primary {
+	.s-portfolio__content-block:first-child .grid-section-split__primary {
 		margin-top: 0;
 	}
 
-	.clients-list__item {
+	.portfolio-list__item {
 		width: 33.3333%;
 	}
 }
 
 @media screen and (max-width: 900px) {
-	.clients-list__item {
+	.portfolio-list__item {
 		width: 50%;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	.clients-list__item a {
+	.portfolio-list__item a {
 		padding: var(--vspace-1) var(--vspace-0_25);
 	}
 }
 
 @media screen and (max-width: 460px) {
-	.clients-list__item {
+	.portfolio-list__item {
 		width: 100%;
 	}
 
-	.clients-list__item a {
+	.portfolio-list__item a {
 		padding: var(--vspace-0_75) var(--vspace-0_75);
 	}
 }
