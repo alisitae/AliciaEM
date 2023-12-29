@@ -60,8 +60,8 @@
  *		## intro transitions
  * # ABOUT
  * # EXPERTISE
- * # CLIENTS
- *		## clients list
+ * # PORTFOLIO
+ *		## portfolio list
  * # CTA
  * # JOURNAL
  * # FOOTER
@@ -104,28 +104,28 @@
    * color-2(#343D35)
    * color-3(#FEF5E4)
    */
-	--color-1: hsla(35, 87%, 49%, 1);
-	--color-2: hsla(127, 8%, 22%, 1);
-	--color-3: hsla(39, 93%, 95%, 1);
+	--color-1: hsla(349, 73%, 49%, 1);
+	--color-2: hsla(274, 23%, 22%, 1);
+	--color-3: hsla(17, 21%, 95%, 1);
 
   /* theme color variations
    */
-	--color-1-lightest             : hsla(35, 87%, 96%, 1);
-	--color-1-lighter              : hsla(35, 87%, 69%, 1);
-	--color-1-light                : hsla(35, 87%, 59%, 1);
-	--color-1-dark                 : hsla(35, 87%, 39%, 1);
-	--color-1-darker               : hsla(35, 87%, 29%, 1);
-	--color-1-darkest              : hsla(35, 87%, 10%, 1);
+	--color-1-lightest             : hsla(349, 73%, 96%, 1);
+	--color-1-lighter              : hsla(349, 73%, 69%, 1);
+	--color-1-light                : hsla(349, 73%, 59%, 1);
+	--color-1-dark                 : hsla(349, 73%, 39%, 1);
+	--color-1-darker               : hsla(349, 73%, 29%, 1);
+	--color-1-darkest              : hsla(349, 73%, 10%, 1);
 
-	--color-2-lightest             : hsla(127, 8%, 55%, 1);
-	--color-2-lighter              : hsla(127, 8%, 42%, 1);
-	--color-2-light                : hsla(127, 8%, 32%, 1);
-	--color-2-dark                 : hsla(127, 8%, 14%, 1);
-	--color-2-darker               : hsla(127, 8%, 2%, 1);
+	--color-2-lightest             : hsla(274, 23%, 55%, 1);
+	--color-2-lighter              : hsla(274, 23%, 42%, 1);
+	--color-2-light                : hsla(274, 23%, 32%, 1);
+	--color-2-dark                 : hsla(274, 23%, 14%, 1);
+	--color-2-darker               : hsla(274, 23%, 2%, 1);
 	
-	--color-3-light                : hsla(39, 93%, 100%, 1);
-	--color-3-dark                 : hsla(39, 93%, 85%, 1);
-	--color-3-darker               : hsla(39, 93%, 75%, 1);
+	--color-3-light                : hsla(17, 21%, 100%, 1);
+	--color-3-dark                 : hsla(17, 21%, 85%, 1);
+	--color-3-darker               : hsla(17, 21%, 75%, 1);
 
   /* feedback colors
    * color-error(#ffd1d2), color-success(#c8e675), 
@@ -3579,8 +3579,8 @@ td:last-child {
 	--content-padding-bottom: 10.8rem;
 	--content-min-height    : calc(var(--vspace-1) * 27);
 	z-index                 : 2;
-	background-color        : var(--color-2-dark);
-	background              : linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);
+	background-color        : var(--color-2);
+	background              : linear-gradient(20deg, var(--color-2) 40%, var(--color-2-dark) 100%);
 	width                   : 100%;
 	height                  : max(var(--content-min-height), 100vh);
 	overflow                : hidden;
@@ -3948,7 +3948,7 @@ td:last-child {
 .s-about {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-6);
-	background-color: var(--color-2-dark);
+	background-color: var(--color-2);
 	color           : var(--color-3);
 }
 
@@ -4037,32 +4037,32 @@ td:last-child {
 
 
 /* ===================================================================
- * # CLIENTS
+ * # PORTFOLIO
  *
  *
  * ------------------------------------------------------------------- */
-.s-clients {
+.s-portfolio {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-4);
 	background-color: var(--color-3);
 }
 
-.s-clients__content-block:first-child {
+.s-portfolio__content-block:first-child {
 	margin-bottom: var(--vspace-1_75);
 }
 
-.s-clients__content-block:first-child .grid-block {
+.s-portfolio__content-block:first-child .grid-block {
 	--grid-gap-v: 0;
 }
 
-.s-clients__content-block:first-child .grid-section-split__primary {
+.s-portfolio__content-block:first-child .grid-section-split__primary {
 	grid-row: auto;
 }
 
 /* --------------------------------------------------------------------
- * ## clients list
+ * ## portfolio list
  * -------------------------------------------------------------------- */
-.clients-list {
+.portfolio-list {
 	display     : flex;
 	flex-flow   : row wrap;
 	border-color: rgba(0, 0, 0, 0.2);
@@ -4071,7 +4071,7 @@ td:last-child {
 	margin-top  : 0;
 }
 
-.clients-list__item {
+.portfolio-list__item {
 	flex        : none;
 	width       : 20%;
 	border-color: rgba(0, 0, 0, 0.2);
@@ -4080,66 +4080,66 @@ td:last-child {
 	padding     : 0;
 }
 
-.clients-list__item a {
+.portfolio-list__item a {
 	display   : block;
 	padding   : var(--vspace-1) var(--vspace-0_75);
 	transition: all 0.5s ease-in;
 }
 
-.clients-list__item a:focus,
-.clients-list__item a:hover {
+.portfolio-list__item a:focus,
+.portfolio-list__item a:hover {
 	background-color: var(--color-3-dark);
 }
 
-.clients-list__item img {
+.portfolio-list__item img {
 	margin        : 0;
 	transform     : scale(0.95);
 	transition    : all 0.5s ease-in;
 	vertical-align: bottom;
 }
 
-.clients-list__item:nth-child(n) {
+.portfolio-list__item:nth-child(n) {
 	border-style: none solid solid none;
 }
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * clients
+ * portfolio
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
-	.clients-list__item {
+	.portfolio-list__item {
 		width: 25%;
 	}
 }
 
 @media screen and (max-width: 1200px) {
-	.s-clients__content-block:first-child .grid-section-split__primary {
+	.s-portfolio__content-block:first-child .grid-section-split__primary {
 		margin-top: 0;
 	}
 
-	.clients-list__item {
+	.portfolio-list__item {
 		width: 33.3333%;
 	}
 }
 
 @media screen and (max-width: 900px) {
-	.clients-list__item {
+	.portfolio-list__item {
 		width: 50%;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	.clients-list__item a {
+	.portfolio-list__item a {
 		padding: var(--vspace-1) var(--vspace-0_25);
 	}
 }
 
 @media screen and (max-width: 460px) {
-	.clients-list__item {
+	.portfolio-list__item {
 		width: 100%;
 	}
 
-	.clients-list__item a {
+	.portfolio-list__item a {
 		padding: var(--vspace-0_75) var(--vspace-0_75);
 	}
 }
