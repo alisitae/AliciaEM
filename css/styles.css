@@ -3031,7 +3031,7 @@ td:last-child {
  * ## swiper overrides
  * ------------------------------------------------------------------- */
 .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
-	margin: 0 1.2rem;
+	margin: 0 1%;
 }
 
 .swiper-container .swiper-pagination-bullet {
@@ -4127,8 +4127,8 @@ td:last-child {
 .portfolio-list__item {
 	flex        : none;
 	width       : 20%;
-	border-color: rgba(0, 0, 0, 0.2);
-	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0);
+	border-width: 0px;
 	text-align  : center;
 	padding     : 0;
 	position    : relative;
