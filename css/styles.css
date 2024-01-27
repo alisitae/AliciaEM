@@ -1567,7 +1567,7 @@ hr.fancy::before {
 	left             : 50%;
 }
 
-.drop-cap:first-letter {
+.drop-cap::first-letter {
 	float         : left;
 	font-family   : var(--font-1);
 	font-weight   : 600;
@@ -2309,6 +2309,7 @@ td:first-child {
 th:last-child,
 td:last-child {
 	padding-right: 0;
+	text-align   : right;
 }
 
 .table-responsive {
@@ -2867,7 +2868,7 @@ td:last-child {
 
 .social-list a:focus svg path,
 .social-list a:hover svg path {
-	fill: var(--color-3);
+	fill: var(--color-1-light);
 }
 
 .social-list svg {
@@ -2877,7 +2878,7 @@ td:last-child {
 
 .social-list svg path,
 .social-list svg circle {
-	fill      : rgba(255, 255, 255, 0.5);
+	/*fill      : var(--color-1-lighter);*/
 	transition: all 0.5s;
 }
 
@@ -2912,7 +2913,7 @@ td:last-child {
 
 .social-list-just a:focus svg path,
 .social-list-just a:hover svg path {
-	fill: var(--color-3);
+	fill: var(--color-1-light);
 }
 
 .social-list-just svg {
@@ -4620,6 +4621,26 @@ td:last-child {
 	}
 }
 
+/* ===================================================================
+ * # PORTFOLIO CAROUSEL
+ *
+ *
+ * ------------------------------------------------------------------- */
+
+.carousel-inner img {
+	height: auto; /* Ajustar la altura de la imagen al 100% del contenedor */
+	width: auto; /* Permitir que el ancho de la imagen se ajuste automáticamente */
+	margin: 0;
+	vertical-align: middle;
+}
+  
+.carousel-inner {
+	background-color: #181818;
+}
+  
+.carousel-item {
+	text-align: center; /* Centrar la imagen horizontalmente */
+}
 
 
 /* ===================================================================
@@ -4683,8 +4704,10 @@ td:last-child {
 }
 
 .entry__media {
-	margin-top   : var(--vspace-0_5);
-	margin-bottom: var(--vspace-2_5);
+	margin-top     : var(--vspace-0_5);
+	margin-bottom  : var(--vspace-2_5);
+	display    	   : flex;
+	justify-content: center;
 }
 
 .entry__media .featured-image {
